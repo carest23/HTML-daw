@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact - VCF</title>
+    <link rel="icon" href="media/valencia-cf-logo-escudo-1.png" type="image/icon">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="Index.html">Valencia C.F.</a></h1>
+        <figure>
+            <img src="media/valencia-cf-logo-escudo-1.png" alt="VCF logo">
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="Club.html">CLUB</a></li>
+                <li><a href="Players.html">PLAYERS</a></li>
+                <li><a href="Installations.html">FACILITIES</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contact form</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Personal data</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name"><br>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="user_subject"><br>
+
+                    <label for="b_date">Birth date:</label>
+                    <input type="date" id="b_date" name="user_bdate"><br>
+
+                    <label>Sex:</label>
+                    <input type="radio" id="male" name="user_sex" value="MALE">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="user_sex" value="FEMALE">
+                    <label for="female">Female</label>
+                    <input type="radio" id="n_binary" name="user_sex" value="N_BINARY">
+                    <label for="n_binary">No binary</label><br>
+
+                    <label>Preferred language</label>
+
+                    <input type="checkbox" id="english" name="english_lang" value="ENGLISH">
+                    <label for="english">English</label>
+                    <input type="checkbox" id="castillian" name="cast_lang" value="CASTILLIAN">
+                    <label for="castillian">Castillian</label>
+                    <input type="checkbox" id="valencian" name="valen_lang" value="VALENCIAN">
+                    <label for="valencian">Valencian</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Information request</legend>
+
+                    <label>
+                        <span>Select your favourite position:</span>
+                        <select name="position">
+                            <option>GK</option>
+                            <option>RB</option>
+                            <option>CB</option>
+                            <option>LB</option>
+                            <option>CDM</option>
+                            <option>CM</option>
+                            <option>CAM</option>
+                            <option>LM</option>
+                            <option>LF</option>
+                            <option>LW</option>
+                            <option>RM</option>
+                            <option>RF</option>
+                            <option>RW</option>
+                            <option>CF</option>
+                            <option>ST</option>
+                        </select>
+                    </label><br>
+                    <label>
+                        <span>Choose your kit:</span>
+                        <select name="kit">
+                            <option>Home (White)</option>
+                            <option>Away (Red)</option>
+                            <option>Alternative (Blue)</option>
+                            <option>Alternative 2 (Grey)</option>
+                        </select>
+                    </label><br>
+                    <label>
+                        <span>Choose a captain:</span>
+                        <select name="captain">
+                            <option>Carlos Soler</option>
+                            <option>Jose Gaya</option>
+                            <option>Gabriel Paulista</option>
+                            <option>Jaume Domenech</option>
+                        </select>
+                    </label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact us</legend>
+
+                    <label>
+                        <span>Please, contact us by:</span>
+                        <select name="contact">
+                            <option>e-mail</option>
+                            <option>Chat</option>
+                            <option>Phone</option>
+                        </select>
+                    </label><br>
+
+                    <label for="msg">You can send us a message:</label>
+                    <br>
+                    <textarea id="msg" name="user_message"></textarea>
+
+                </fieldset>
+
+                <button>Reset form</button>
+                <button>Send request</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        Website powered by <a href="Contact.html">@CarlosEstalrich</a>.
+    </footer>
+</body>
+
+</html>
